@@ -6,22 +6,60 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Alexandre Briol - Portfolio</title>
+        <link rel="stylesheet" href="https://use.typekit.net/wpr6kgt.css">
+        <link rel="stylesheet" href="./src/scss/reset.scss">
+        <link rel="stylesheet" href="./src/scss/styles.scss">
     </head>
     <body>
         <h1 class="sr-only">Mon portfolio</h1>
-        <nav class="main-nav">
-            <h2 class="sr-only">
-                Navigation principale
-            </h2>
-            <a href="/">
-                <img src="src/img/1x/Logo_WT.png" height="800" width="800" alt="Image de mon logo"/>
-            </a>
-            <ul class="nav-menu">
-                <li><a href="/">Accueil</a></li>
-                <li><a href="/about">Me d&eacute;couvir</a></li>
-                <li><a href="/porfolio">Portfolio</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
+        <header>
+            <nav class="main-nav">
+                <h2 class="sr-only">
+                    Navigation principale
+                </h2>
+                <a href="/"><img src="src/img/1x/Logo_WT.png" height="800" width="800" alt="Image de mon logo"/></a>
+                <div class="hamburger-menu">
+                    <input type="checkbox" id="menu__toggle">
+                    <label for="menu__toggle" class="menu__button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="0 0 31 21">
+                                <g id="Groupe_1" data-name="Groupe 1" transform="translate(-216 -134)">
+                                <line id="Ligne_1" data-name="Ligne 1" x2="18" transform="translate(222.5 135.5)"
+                                      fill="none"
+                                      stroke="#0040ff" stroke-linecap="round" stroke-width="3"/>
+                                <line id="Ligne_2" data-name="Ligne 2" x2="18" transform="translate(222.5 144.5)"
+                                      fill="none"
+                                      stroke="#0040ff" stroke-linecap="round" stroke-width="3"/>
+                                <line id="Ligne_3" data-name="Ligne 3" x2="28" transform="translate(217.5 144.5)"
+                                      fill="none"
+                                      stroke="#0040ff" stroke-linecap="round" stroke-width="3"/>
+                                <line id="Ligne_4" data-name="Ligne 4" x2="18" transform="translate(222.5 153.5)"
+                                      fill="none"
+                                      stroke="#0040ff" stroke-linecap="round" stroke-width="3"/>
+                                </g>
+                            </svg>
+                    </label>
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="/">Accueil</a></li>
+                        <li><a class="menu__item" href="/about">Me d&eacute;couvir</a></li>
+                        <li><a class="menu__item" href="/porfolio">Portfolio</a></li>
+                        <li><a class="menu__item" id="contactButton" href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h1>
+                    <span>Bonjour&nbsp;!</span>
+                    Je suis <i>Alexandre Briol</i>
+                </h1>
+                <p>
+                    Bienvenue sur mon <i>Portfolio</i>&nbsp;!
+                </p>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
     </body>
 </html>
